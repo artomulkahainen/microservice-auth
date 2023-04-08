@@ -2,11 +2,13 @@
     "name": "microservice-auth",
     "version": "1.0.0",
     "description": "Microservice-auth",
-    "main": "index.js",
+    "main": "server.js",
     "scripts": {
-        "dev": "NODE_ENV=dev nodemon -e ts --exec ts-node -r tsconfig-paths/register ./server.ts",
+        "build": "rimraf ./build && tsc && tsc-alias",
+        "prod": "TS_NODE_BASEURL=./build node -r tsconfig-paths/register ./build/server.js",
+        "dev": "NODE_ENV=dev nodemon -e ts --exec ts-node -r tsconfig-paths/register ./src/server.ts",
         "test": "NODE_ENV=test cross-env jest --testTimeout=5000",
-        "devWindows": "nodemon -e ts --exec ts-node -r tsconfig-paths/register ./server.ts",
+        "devWindows": "nodemon -e ts --exec ts-node -r tsconfig-paths/register ./src/server.ts",
         "testWindows": "cross-env jest --testTimeout=5000",
         "lint": "npx eslint ."
     },
@@ -39,9 +41,11 @@
         "jest": "^29.5.0",
         "nodemon": "^2.0.22",
         "prettier": "2.8.7",
+        "rimraf": "^4.4.1",
         "supertest": "^6.3.3",
         "ts-jest": "^29.1.0",
         "ts-node": "^10.9.1",
+        "tsc-alias": "^1.8.5",
         "tsconfig-paths": "^4.2.0",
         "typescript": "^5.0.3"
     }

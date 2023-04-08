@@ -1,4 +1,4 @@
-import { HelloWorldDTO } from 'dto/helloWorldDtos';
+import { HelloWorldDTO } from '../../../dto/helloWorldDtos';
 import { superTestApi } from '../../config/testConfig';
 
 const isHelloWorldDTO = (value: unknown) => !!(value as HelloWorldDTO).text;
