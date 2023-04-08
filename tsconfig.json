@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "paths": {
+            "@controllers/*": ["controllers/*"],
+            "@dto/*": ["dto/*"],
+            "@mappers/*": ["mappers/*"],
+            "@services/*": ["services/*"],
+            "@utils/*": ["utils/*"]
+        }
+    }
+}
