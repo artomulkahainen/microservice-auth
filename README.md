@@ -25,11 +25,13 @@ This project is meant to be run with other microservices. Local microservice set
 To run only this microservice on local:
 
 -   install node lts
--   `npm install´
+-   rename ".env.EXAMPLE" to ".env"
+-   add port number to .env file
+-   `npm install`
 -   `npm run dev` (linux) / `npm run devWindows` (windows)
 
 ## How to run tests
 
 -   install node lts
--   `npm install´
+-   `npm install`
 -   `npm run test` (linux) / `npm run testWindows` (windows)
