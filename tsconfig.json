@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
-        "baseUrl": ".",
+        "baseUrl": "./src",
         "esModuleInterop": true,
+        "rootDir": "./src",
+        "outDir": "./build",
         "paths": {
             "@controllers/*": ["controllers/*"],
             "@dto/*": ["dto/*"],
@@ -9,5 +11,6 @@
             "@services/*": ["services/*"],
             "@utils/*": ["utils/*"]
         }
-    }
+    },
+    "exclude": ["src/tests"]
 }
