@@ -7,8 +7,10 @@
         "^@controllers/(.*)$",
         "^@dto/(.*)$",
         "^@mappers/(.*)$",
+        "^@routes/(.*)$",
         "^@services/(.*)$",
         "^@utils/(.*)$",
+        "^@validators/(.*)$",
         "^[./]"
     ],
     "importOrderSeparation": false,
