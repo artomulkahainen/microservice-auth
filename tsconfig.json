@@ -8,8 +8,10 @@
             "@controllers/*": ["controllers/*"],
             "@dto/*": ["dto/*"],
             "@mappers/*": ["mappers/*"],
+            "@routes/*": ["routes/*"],
             "@services/*": ["services/*"],
-            "@utils/*": ["utils/*"]
+            "@utils/*": ["utils/*"],
+            "@validators/*": ["validators/*"]
         }
     },
     "exclude": ["src/tests"]
